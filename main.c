@@ -25,17 +25,11 @@
 #define oscillator 0x20
 #define rtc_rb 0x82
 
-
-//unsigned char add;
 volatile int rdata;
-//unsigned char wdata;
 
 void read(unsigned char raddress);
 void write(unsigned char waddress, unsigned char wdata);
 
-/*
- * main.c
- */
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 	P2DIR &= 0x00;
@@ -64,7 +58,7 @@ int main(void) {
 		read(R_MIN);
 		read(R_SEC);
 		read(R_B);
-	};
+	}
 
 }
 
