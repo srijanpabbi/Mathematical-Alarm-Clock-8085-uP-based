@@ -92,10 +92,9 @@ mathematical calculations is justified.
 
 ## 4 Block Diagram
 
+![Figure 1: Block Diagram of Mathematical Alarm Clock](images/Block_Diagram.png)
 ```
 Figure 1: Block Diagram of Mathematical Alarm Clock
-
-![Figure 1: Block Diagram of Mathematical Alarm Clock](images/Block_Diagram.png)
 ```
 
 ## 5 Technical Details
@@ -111,10 +110,11 @@ plementation of the original TTL 8085 which has a quiescent current of as low as
 has a 64KB memory address space and 256 bytes of I/O space. In this case the 8085 is running at 3MHz
 from the clock of a 6MHz crystal oscillator.
 
+![Figure 2: OKI 8085](images/oki_8085_m80c85ah.jpg)
 ```
 Figure 2: OKI 8085
 ```
-![Figure 1: OKI 8085](images/oki_8085_m80c85ah.jpg)
+
 
 #### 5.1.2 Peripherals And Addressing
 
