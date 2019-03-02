@@ -184,23 +184,27 @@ positioning, any big character can be generated.
 ```
 (b) Building Blocks For The Digits
 ```
-- In order to initialize the LCD the following set of commands need to be sent on the LCD port using
-    the command function explained later. The first command is used to set the LCD into the 8 bit
-    data acceptance mode along with a 2 line spill over, which means that if the first line is filled with
-    characters, the next character sent will be automatically printed in the next line. The second command
-    clears the LCD of any previous garbage value. Next comes the display on command and the cursor
-    mode determination. At the end the entry mode is specifier which determines the movement of data
-    or the cursor on the data input to the LCD.
-1 LCD_INIT : MVI C, 3 8 h ; 8 b i t 2 l i n e mode
+
+```
+In order to initialize the LCD the following set of commands need to be sent on the LCD port using
+the command function explained later. The first command is used to set the LCD into the 8 bit
+data acceptance mode along with a 2 line spill over, which means that if the first line is filled with
+characters, the next character sent will be automatically printed in the next line. The second command
+clears the LCD of any previous garbage value. Next comes the display on command and the cursor
+mode determination. At the end the entry mode is specifier which determines the movement of data
+or the cursor on the data input to the LCD.
+
+1 LCD_INIT : MVI C, 38h ; 8 bit 2 line mode
 2 CALL SEND_CMD
-3 MVI C, 0 1 h ; c l e a r l c d
+3 MVI C, 0 1 h          ; clear lcd
 4 CALL SEND_CMD
-5 MVI C , 0 Ch ; d i s p l a y on , c u r s o r o f f , b l i n k o f f
+5 MVI C , 0 Ch          ; display on, cursoroff, blinkoff
 6 CALL SEND_CMD
-7 MVI C, 0 6 h ; e n t r y mode
+7 MVI C, 0 6 h          ; entry mode
 8 CALL SEND_CMD
 9 RET
-10
+```
+
 - The following are two subroutines which are used to send either data or commands to the LCD
     display. Both of them follow a strict protocol in which first the data or command word is made
     available on the PORTB lines of the 8155. The protocol next requires the LCDRS to be either high or
