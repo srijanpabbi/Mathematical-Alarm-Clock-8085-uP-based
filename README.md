@@ -2,15 +2,13 @@
 This device aims to make turning off an alarm a slightly more involving task, forcing the user to focus on the device for some time hence breaking the sleep. It will keep track of time using a RTC and will sound an alarm on the preset time and throw a randomly generated integer based mathematical problem at the user(+,-,/,*), the alarm will stop ringing as soon as the user enters the correct answer to the question. This projects will incorporate a display, a keypad, alarm sounding system(buzzer), and a RTC.
 
 
-## NETAJISUBHAS INSTITUTE OFTECHNOLOGY
+## NETAJI SUBHAS INSTITUTE OFTECHNOLOGY
 
-## DIVISION OFELECTRONICS ANDCOMMUNICATIONENGINEERING
+## DIVISION OFELECTRONICS AND COMMUNICATIONENGINEERING
 
 ### EC316 MICROPROCESSORLABPROJECTREPORT
 
-# Mathematical
-
-# Alarm Clock
+# Mathematical Alarm Clock
 
 ## ANINTEL8085 MICROPROCESSOR BASED PROJECT
 
@@ -96,8 +94,9 @@ mathematical calculations is justified.
 
 ```
 Figure 1: Block Diagram of Mathematical Alarm Clock
-```
+
 ![Figure 1: Block Diagram of Mathematical Alarm Clock](images/Block_Diagram.png)
+```
 
 ## 5 Technical Details
 
@@ -115,7 +114,7 @@ from the clock of a 6MHz crystal oscillator.
 ```
 Figure 2: OKI 8085
 ```
-![Figure 1: OKI 8085](oki_8085_m80c85ah.jpg)
+![Figure 1: OKI 8085](images/oki_8085_m80c85ah.jpg)
 
 #### 5.1.2 Peripherals And Addressing
 
