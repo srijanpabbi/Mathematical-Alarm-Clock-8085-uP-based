@@ -1,4 +1,5 @@
-# Mathematical-Alarm-Clock [Find PDF in git repo]
+# Mathematical-Alarm-Clock
+#[Find PDF in git repo(Brief Document)]
 This device aims to make turning off an alarm a slightly more involving task, forcing the user to focus on the device for some time hence breaking the sleep. It will keep track of time using a RTC and will sound an alarm on the preset time and throw a randomly generated integer based mathematical problem at the user(+,-,/,*), the alarm will stop ringing as soon as the user enters the correct answer to the question. This projects will incorporate a display, a keypad, alarm sounding system(buzzer), and a RTC.
 
 
